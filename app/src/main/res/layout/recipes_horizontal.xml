@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <ListView
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:id="@+id/recipe_list_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.5" />
+
+
+    <FrameLayout
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/recipeTitle"
+                android:layout_alignParentTop="true"/>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@id/recipeTitle"
+                android:id="@+id/recipePhoto"
+                android:src="@drawable/default_food_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/inglabel"
+                android:layout_below="@id/recipePhoto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingTop="7dp"
+                android:id="@+id/ingredientslist"
+                android:layout_below="@id/inglabel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:paddingTop="7dp"
+                android:id="@+id/directions"
+                android:layout_below="@id/ingredientslist" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.wfd.cs175.whatsfordinner.MealsActivity"
+    tools:showIn="@layout/activity_meals">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:ems="15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mondaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:text="Monday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <Spinner
+                android:id="@+id/monday_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_below="@id/mondaytext"
+                android:layout_marginTop="15dp" />
+
+            <Spinner
+                android:id="@+id/monday_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/monday_lunch"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/monday_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/monday_breakfast"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/tuesdaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/monday_dinner"
+                android:paddingBottom="1dp"
+                android:text="Tuesday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <Spinner
+                android:id="@+id/tuesday_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/tuesdaytext"
+                android:layout_marginTop="5dp" />
+
+            <Spinner
+                android:id="@+id/tuesday_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tuesday_breakfast"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/tuesday_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tuesday_lunch"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/wednesdaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/tuesday_dinner"
+                android:paddingBottom="1dp"
+                android:text="Wednesday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <Spinner
+                android:id="@+id/wednesday_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/wednesdaytext"
+                android:layout_marginTop="5dp" />
+
+            <Spinner
+                android:id="@+id/wednesday_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/wednesday_breakfast"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/wednesday_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/wednesday_lunch"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/thursdaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/wednesday_dinner"
+                android:paddingBottom="1dp"
+                android:text="Thursday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <Spinner
+                android:id="@+id/thursday_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/thursdaytext"
+                android:layout_marginTop="5dp" />
+
+            <Spinner
+                android:id="@+id/thursday_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/thursday_breakfast"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/thursday_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/thursday_lunch"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/fridaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/thursday_dinner"
+                android:paddingBottom="1dp"
+                android:text="Friday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <Spinner
+                android:id="@+id/friday_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/fridaytext"
+                android:layout_marginTop="5dp" />
+
+            <Spinner
+                android:id="@+id/friday_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/friday_breakfast"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/friday_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/friday_lunch"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/saturdaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/friday_dinner"
+                android:paddingBottom="1dp"
+                android:text="Saturday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <Spinner
+                android:id="@+id/saturday_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/saturdaytext"
+                android:layout_marginTop="5dp" />
+
+            <Spinner
+                android:id="@+id/saturday_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/saturday_breakfast"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/saturday_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/saturday_lunch"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/sundaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/saturday_dinner"
+                android:paddingBottom="1dp"
+                android:text="Sunday"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <Spinner
+                android:id="@+id/sunday_breakfast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/sundaytext"
+                android:layout_marginTop="5dp" />
+
+            <Spinner
+                android:id="@+id/sunday_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sunday_breakfast"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/sunday_dinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sunday_lunch"
+                android:layout_marginTop="10dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
